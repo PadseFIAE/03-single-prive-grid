@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	font-size:100%;
+}
+
+body {
+	padding:25px;
+	background-color:hsl(204, 43%, 93%);
+	font-family: 'Karla', sans-serif;
+}
+
+h1 {
+	color:hsl(179, 62%, 43%);
+	font-size:24px;
+}
+
+h2 {
+	font-size:18px;
+	color:white;
+}
+
+h3 {
+	font-size:18px;
+	color: hsl(71, 73%, 54%);
+	font-weight:700;
+}
+
+header {
+	color:hsl(218, 22%, 67%);
+	background-color:white;
+}
+
+header p {
+	#font-size:14px;
+}
+
+#price {
+	display:flex;
+	align-items:center;
+	font-weight:bold;
+	font-size: 30px;
+	margin-bottom:5px;
+}
+
+span {
+	font-size:0.8rem;
+	margin-left:15px;
+	color:hsl(218, 22%, 80%);
+}
+
+button {
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	height:40px;
+	width:100%;
+	background-color:hsl(71, 73%, 54%);
+	border:1px solid transparent;
+	border-radius:5px;
+}
+
+#left {
+	color:white;
+	font-size:14px;
+}
+
+#right {
+	font-size:14px;
+	color:hsl(218, 22%, 90%);
+}
+
+@media only screen and (max-width:480px) {
+	
+	body {
+		padding-top:50px;
+	}
+	
+	#inhalt {
+		background:white;
+		display:flex;
+		flex-direction:column;
+		max-width:100%;
+		margin:auto;
+		border-radius:5px;
+		color:white;
+	}
+
+	header {
+		padding:20px;
+		min-height:25vh;
+	}
+	
+	header p {
+		line-height:1.5rem;
+	}
+	
+	#left, #right {
+		padding:30px;
+		min-height:20vh;
+	}
+	
+	#left {
+		background-color:hsl(179, 62%, 43%);
+	}
+	
+	#right {
+		background-color:hsl(179, 62%, 48%);
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+	}
+	
+	footer {
+		text-align:center;
+		position:relative;
+		margin-top:2em;
+	}
+}
+
+@media only screen and (min-width:481px) {
+	body {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+	}
+	
+	#inhalt {
+		border-radius:10px;
+		display:flex;
+		flex-direction:column;
+		height:50vh;
+		width:45vw;
+	}
+	
+	main {
+		display:inline-grid;
+		grid-template-columns:2fr 2fr;
+	}
+	
+	header {
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		padding:35px;
+		max-width:100%;
+	}
+	
+	#left {
+		border-bottom-left-radius:10px;
+		padding:35px;
+		background-color:hsl(179, 62%, 43%);
+		min-width:50%;
+	}
+	
+	#right {
+		border-bottom-right-radius:10px;
+		padding:35px;
+		background-color:hsl(179, 62%, 47%);
+		min-width:50%;
+	}
+	
+	footer {
+		#text-align:center;
+		position:fixed;
+		bottom:0;
+		margin-top:2em;
+	}
+}
+
+
+/*
+* {
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-size:100%;
+}
+
+body {
+	padding:10px;
+	background-color:hsl(204, 43%, 93%);
+	max-width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: 'Karla', sans-serif;
+}
+
+img {
+	max-width:100%;
+}
+
+
+h1 {
+	color:hsl(179, 62%, 43%);
+	font-size:24px;
+}
+
+h2 {
+	font-size:16px;
+	color:white;
+}
+
+h3 {
+	font-size:18px;
+	color: hsl(71, 73%, 54%);
+	font-weight:700;
+}
+
+header p {
+	color:hsl(218, 22%, 67%);
+}
+
+#price {
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+}
+
+#full {
+	color:hsl(218, 22%, 80%);
+}
+
+span {
+	margin-left:10px;
+	font-size:16px;
+	font-weight:normal;
+	color:hsl(218, 22%, 80%);
+}
+
+#inhalt {
+	width:50vw;
+	border-radius:10px;
+	background-color: white;
+	display:inline-grid;
+	grid-template-rows:2fr 2fr;
+	height:60vh;
+}
+
+header {
+	padding:40px;
+}
+
+main {
+	color:white;
+	display:inline-grid;
+	grid-template-columns:2fr 2fr;
+}
+
+#left {
+	border-bottom-left-radius:10px;
+	padding:30px;
+	background-color:hsl(179, 62%, 43%);
+	display:flex;
+	flex-direction:column;
+	justify-content:left;
+	align-items:left;
+}
+
+#right {
+	color:hsl(204, 43%, 90%);
+	font-weight:400;
+	font-size:13px;
+	line-height:1.1rem;
+	padding:30px;
+	border-bottom-right-radius:10px;
+	background-color:hsl(179, 62%, 48%);
+}
+
+button {
+	font-weight:bold;
+	color: white;
+	width:95%;
+	height:40px;
+	background-color:hsl(71, 73%, 54%);
+	border:0px solid transparent;
+	border-radius:5px;
+	padding:5px;
+}
+
+footer {
+	position:fixed;
+	margin:auto;
+	margin-top:2em;
+	bottom:0.5rem;
+}
+
+a:link {
+	color: hsl(179, 62%, 43%);
+}
+
+a:hover, a:focus {
+	color: hsl(71, 73%, 54%);
+}
+
+ a:active {
+	 color:red;
+ }
+
+a:visited {
+	color: hsl(204, 43%, 93%);
+}
+
+@media only screen and (max-width:600px) {
+	
+}
+*/
